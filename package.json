@@ -9,15 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^7.1.2",
+    "@mantine/dates": "^7.1.2",
+    "@mantine/dropzone": "^7.1.2",
+    "@mantine/ds": "^7.1.2",
+    "@mantine/form": "^7.1.2",
+    "@mantine/hooks": "^7.1.2",
+    "@mantine/modals": "^7.1.2",
+    "@mantine/notifications": "^7.1.2",
+    "@tabler/icons-react": "^2.38.0",
+    "axios": "^1.5.1",
+    "dayjs": "^1.11.10",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "autoprefixer": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.8.0",
+    "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "^3.3.3"
   }
 }
