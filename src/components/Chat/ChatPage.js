@@ -38,11 +38,11 @@ const ChatPage = ({ roomDetails }) => {
   };
 
   if (!roomDetails) {
-    return <div>Loading...</div>;
+    return <div>Please Select A Room...</div>;
   }
 
   return (
-    <div className="h-full w-full bg-neutral-50 rounded-2xl flex flex-col justify-between">
+    <div className="h-full basis-2/3 bg-neutral-50 rounded-2xl flex flex-col justify-between">
       <div>
         <div>
           <h1 className="font-semibold p-4 capitalize">{roomDetails.name}</h1>

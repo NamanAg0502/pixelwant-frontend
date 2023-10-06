@@ -23,7 +23,7 @@ const ChatSidebar = ({ setRoomDetails }) => {
   }, []); // Add an empty dependency array to run the effect only once
 
   return (
-    <div className="bg-neutral-50 h-full rounded-2xl w-1/3 flex flex-col items-center justify-between">
+    <div className="bg-neutral-50 h-full rounded-2xl basis-1/3 flex flex-col items-center justify-between">
       <ul className="flex flex-col justify-start items-center p-4 w-full gap-2">
         {chatRooms.map((chatRoom) => (
           <li
