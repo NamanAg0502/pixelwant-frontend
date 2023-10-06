@@ -12,14 +12,14 @@ import { useRouter } from 'next/navigation';
 
 const data = [
   {
-    link: '',
+    link: '/',
     label: 'Dashboard',
     icon: IconDashboard,
   },
-  { link: '', label: 'Chat', icon: IconMessage },
-  { link: '', label: 'Events', icon: IconCalendarEvent },
-  { link: '', label: 'File Sharing', icon: IconFileUpload },
-  { link: '', label: 'Settings', icon: IconSettings },
+  { link: '/chat', label: 'Chat', icon: IconMessage },
+  { link: '/calender', label: 'Events', icon: IconCalendarEvent },
+  { link: '/file-sharing', label: 'File Sharing', icon: IconFileUpload },
+  { link: '/settings', label: 'Settings', icon: IconSettings },
 ];
 
 export default function Sidebar({ label }) {
@@ -33,8 +33,7 @@ export default function Sidebar({ label }) {
       data-active={item.label === active || undefined}
       href={item.link}
       key={item.label}
-      onClick={(event) => {
-        event.preventDefault();
+      onClick={() => {
         setActive(item.label);
       }}
     >
@@ -52,6 +51,7 @@ export default function Sidebar({ label }) {
           href="#"
           fullWidth
           variant="light"
+          color="red"
           onClick={() => {
             console.log('logging out');
             logout();

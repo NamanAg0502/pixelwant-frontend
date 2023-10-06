@@ -1,4 +1,5 @@
 import './globals.css';
+import '@mantine/dates/styles.css';
 import { Inter } from 'next/font/google';
 import { AppProvider } from './provider';
 
